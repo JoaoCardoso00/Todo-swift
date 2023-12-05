@@ -12,7 +12,7 @@ struct DeleteButton: View {
 
     var body: some View {
         Button(action: action) {
-            Image(systemName: "trash").foregroundColor(Color("Gray-300")).font(.title2)
+            Image(systemName: "trash").foregroundColor(Color("Gray-300"))
         }
     }
 }
