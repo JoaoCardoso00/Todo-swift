@@ -13,6 +13,7 @@
 		80494F1F2B1FB5CA009A18FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80494F1E2B1FB5CA009A18FA /* Preview Assets.xcassets */; };
 		80494F292B1FBA0C009A18FA /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80494F282B1FBA0C009A18FA /* Inter-Bold.ttf */; };
 		80494F2B2B1FBA1F009A18FA /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80494F2A2B1FBA1F009A18FA /* Inter-Regular.ttf */; };
+		80494F2F2B1FCCC1009A18FA /* ToggleBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80494F2E2B1FCCC1009A18FA /* ToggleBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		80494F1E2B1FB5CA009A18FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		80494F282B1FBA0C009A18FA /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
 		80494F2A2B1FBA1F009A18FA /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		80494F2E2B1FCCC1009A18FA /* ToggleBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		80494F162B1FB5C8009A18FA /* Todo-list */ = {
 			isa = PBXGroup;
 			children = (
+				80494F2D2B1FCC36009A18FA /* components */,
 				80494F252B1FB9D7009A18FA /* fonts */,
 				80494F172B1FB5C8009A18FA /* Todo_listApp.swift */,
 				80494F192B1FB5C8009A18FA /* ContentView.swift */,
@@ -79,6 +82,14 @@
 				80494F282B1FBA0C009A18FA /* Inter-Bold.ttf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		80494F2D2B1FCC36009A18FA /* components */ = {
+			isa = PBXGroup;
+			children = (
+				80494F2E2B1FCCC1009A18FA /* ToggleBox.swift */,
+			);
+			path = components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80494F2F2B1FCCC1009A18FA /* ToggleBox.swift in Sources */,
 				80494F1A2B1FB5C8009A18FA /* ContentView.swift in Sources */,
 				80494F182B1FB5C8009A18FA /* Todo_listApp.swift in Sources */,
 			);
