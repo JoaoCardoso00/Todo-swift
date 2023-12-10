@@ -8,14 +8,18 @@
 import SwiftUI
 
 struct CreateButton: View {
+    var action: () -> Void
+    
     var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 10).frame(width: 65, height: 65).foregroundStyle(Color("Brand Blue dark"))
-            Image(systemName: "plus.circle").foregroundColor(Color("Gray-100")).font(.title2)
+        Button(action: action) {
+            ZStack {
+                RoundedRectangle(cornerRadius: 10).frame(width: 50, height: 50).foregroundStyle(Color("Brand Blue dark"))
+                Image(systemName: "plus.circle").foregroundColor(Color("Gray-100"))
+            }
         }
     }
 }
 
 #Preview {
-    CreateButton()
+    CreateButton {}
 }

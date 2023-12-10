@@ -10,20 +10,24 @@ import SwiftUI
 struct Input: View {
     @Binding var text: String
 
+    var strokeColor: Color {
+        text.count > 0 ? Color(.brandPurple) : Color(.clear)
+    }
+
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 5)
-                .frame(width: .infinity, height: 50)
                 .foregroundColor(Color("Gray-500"))
                 .overlay(
                     RoundedRectangle(cornerRadius: 5)
-                        .stroke(Color("Brand Purple dark"), lineWidth: text.count > 0 ? 2 : 0)
+                        .stroke(strokeColor, lineWidth: 2)
                 )
             TextField("", text: $text, prompt: Text("Adicione uma nova tarefa")
                 .foregroundStyle(Color("Gray-300")))
                 .padding()
                 .foregroundColor(Color("Gray-100"))
-        }
+                .autocorrectionDisabled()
+        }.frame(height: 50)
     }
 }
 
