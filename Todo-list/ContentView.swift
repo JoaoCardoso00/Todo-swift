@@ -53,16 +53,8 @@ struct ContentView: View {
                     }
                 }.padding(20)
                 Divider().overlay(.gray300)
-                ScrollView {
-                    VStack(spacing: 10) {
-                        Spacer().frame(height: 20) // Top padding
-
-                        ForEach(taskManager.tasks, id: \.id) { task in
-                            Task(onCompleteChange: taskManager.toggleCompleteTask, onDelete: taskManager.deleteTask, task: task)
-                        }
-                    }
-                }.scrollIndicators(.hidden)
-            }.padding()
+                TaskList()
+            }.padding().dismissKeyboardOnTap()
         }
     }
 }

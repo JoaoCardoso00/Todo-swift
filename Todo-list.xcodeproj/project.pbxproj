@@ -20,6 +20,8 @@
 		80494F372B2127A7009A18FA /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80494F362B2127A7009A18FA /* Input.swift */; };
 		80F1F4F02B251BF500DE93C3 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F1F4EF2B251BF500DE93C3 /* TaskManager.swift */; };
 		80F1F4F72B251FB100DE93C3 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F1F4F62B251FB100DE93C3 /* TaskModel.swift */; };
+		80F1F4F92B2633D400DE93C3 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F1F4F82B2633D400DE93C3 /* TaskList.swift */; };
+		80F1F4FC2B263B9E00DE93C3 /* DismissKeyboardOnTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F1F4FB2B263B9E00DE93C3 /* DismissKeyboardOnTap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		80494F362B2127A7009A18FA /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
 		80F1F4EF2B251BF500DE93C3 /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
 		80F1F4F62B251FB100DE93C3 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		80F1F4F82B2633D400DE93C3 /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
+		80F1F4FB2B263B9E00DE93C3 /* DismissKeyboardOnTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissKeyboardOnTap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,7 @@
 		80494F162B1FB5C8009A18FA /* Todo-list */ = {
 			isa = PBXGroup;
 			children = (
+				80F1F4FA2B263B7E00DE93C3 /* helpers */,
 				80F1F4F12B251CDA00DE93C3 /* Models */,
 				80F1F4EE2B251BE500DE93C3 /* Managers */,
 				80494F2D2B1FCC36009A18FA /* components */,
@@ -106,6 +111,7 @@
 				80494F322B1FD548009A18FA /* CreateButton.swift */,
 				80494F342B1FD8C3009A18FA /* Task.swift */,
 				80494F362B2127A7009A18FA /* Input.swift */,
+				80F1F4F82B2633D400DE93C3 /* TaskList.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -124,6 +130,14 @@
 				80F1F4F62B251FB100DE93C3 /* TaskModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		80F1F4FA2B263B7E00DE93C3 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				80F1F4FB2B263B9E00DE93C3 /* DismissKeyboardOnTap.swift */,
+			);
+			path = helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,12 +212,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80F1F4FC2B263B9E00DE93C3 /* DismissKeyboardOnTap.swift in Sources */,
 				80494F372B2127A7009A18FA /* Input.swift in Sources */,
 				80494F312B1FD2EE009A18FA /* DeleteButton.swift in Sources */,
 				80F1F4F02B251BF500DE93C3 /* TaskManager.swift in Sources */,
 				80F1F4F72B251FB100DE93C3 /* TaskModel.swift in Sources */,
 				80494F332B1FD548009A18FA /* CreateButton.swift in Sources */,
 				80494F2F2B1FCCC1009A18FA /* ToggleBox.swift in Sources */,
+				80F1F4F92B2633D400DE93C3 /* TaskList.swift in Sources */,
 				80494F1A2B1FB5C8009A18FA /* ContentView.swift in Sources */,
 				80494F352B1FD8C3009A18FA /* Task.swift in Sources */,
 				80494F182B1FB5C8009A18FA /* Todo_listApp.swift in Sources */,
